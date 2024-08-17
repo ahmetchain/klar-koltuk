@@ -13,6 +13,12 @@ import Before_5 from "../../png/5.jpg";
 import After_6 from "../../png/6.jpg";
 import ForYou from "../../png/foryou.jpeg";
 import NewForYou from "../../png/newfor.png";
+import Tasarim from "../../png/tasarım.jpeg";
+import Tasarim1 from "../../png/tasarım1.jpeg";
+import Tasarim2 from "../../png/tasarım2.jpeg";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import FooterVideo from "../../video/footerstock.mp4"
+
 export default function Home() {
   return (
     <div className="h-screen">
@@ -48,7 +54,7 @@ export default function Home() {
       </main>
       <div className="px-20 flex flex-col gap-y-20">
         <AboutSection />
-        <div className="text-center text-6xl font-semibold mt-10 mb-10 bg-black/5 py-10">
+        <div className="text-center text-6xl font-semibold mt-10 mb-10 bg-black/5 py-10 rounded-xl">
           HİZMETLERİMİZ
         </div>
         <Services />
@@ -107,7 +113,7 @@ export default function Home() {
           <p className="text-center">Yenilenmiş ve sıfır tarzında</p>
         </div>
       </div>
-      <div className="relative">
+      <div className="relative ">
         <img
           src={ForYou}
           className="w-[calc(100%-15px)] mx-auto rounded-xl h-[800px] object-cover"
@@ -126,6 +132,75 @@ export default function Home() {
           </button>
         </div>
       </div>
+      <div className=" px-20 mt-10  flex flex-col gap-y-20">
+        <AboutSection />
+        <div className=" overflow-hidden">
+          <Parallax translateX={[80, -80]}>
+            <h1 className="text-[175px] -mb-28 text-banner font-[900] tracking-widest text-stroke">
+              KLARKLARKLAR
+            </h1>
+          </Parallax>
+          <Parallax translateX={[-80, 80]}>
+            <h1 className=" text-[175px] text-banner font-[900] tracking-widest text-stroke">
+              KOLTUKKOLTUKKOLTUK
+            </h1>
+          </Parallax>
+        </div>
+        <div className="flex items-center justify-between mt-10">
+          <div className=" w-[700px] ">
+            <img className="w-full  rounded-2xl" src={Tasarim} />
+          </div>
+          <div className="w-[750px] pr-12 ">
+            <h1 className="text-5xl font-semibold">
+              Siz İsteyin Biz Gerçekleştirelim
+            </h1>
+            <p className="mt-5 mb-3 text-xl">
+              We believe that the future of urban living is in creating a sense
+              of community and a sense of home. We are committed to creating
+              spaces that are not only beautiful, but also functional and
+              sustainable.
+            </p>
+            <button className=" mt-5 rounded-full font-semibold px-8 py-4 border-black border-2    hover:bg-black/20 hover:border-white  text-xl">
+              İletişime Geçin
+            </button>
+          </div>
+        </div>
+        <div className="flex items-center flex-row-reverse justify-between mt-10">
+          <div className=" w-[700px] ">
+            <img className="w-full  rounded-2xl" src={Tasarim2} />
+          </div>
+          <div className="w-[750px] pr-12 ">
+            <h1 className="text-5xl font-semibold">
+              Koltuklarınızı Modernleştirirken, Anılarınızı Özenle Koruyoruz.
+            </h1>
+            <p className="mt-5 mb-3 text-xl">
+              We believe that the future of urban living is in creating a sense
+              of community and a sense of home. We are committed to creating
+              spaces that are not only beautiful, but also functional and
+              sustainable.
+            </p>
+            <button className=" mt-5 rounded-full font-semibold px-8 py-4 border-black border-2    hover:bg-black/20 hover:border-white  text-xl">
+              İletişime Geçin
+            </button>
+          </div>
+        </div>
+      </div>
+      <footer className="relative mt-20 h-[600px] w-[calc(100%-15px)] mx-auto ">
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover rounded-xl"
+          src={FooterVideo}
+          autoPlay
+          loop
+          muted
+          
+        />
+                <div className="absolute w-[calc(100%-15px)] mx-auto inset-0 bg-gradient-to-b from-black/35 to-transparent rounded-lg"></div>
+
+        <div className="relative z-10 text-white p-10">
+          <h2 className="text-4xl font-bold">Footer Başlığı</h2>
+          <p className="mt-4 text-lg">Footer içeriği buraya gelecek.</p>
+        </div>
+      </footer>
     </div>
   );
 }
