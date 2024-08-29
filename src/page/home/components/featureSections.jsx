@@ -7,7 +7,7 @@ export default function FeatureSections({Title, Paragraph, Button, Img, Reverse,
     <div className=" w-[350px]  md:w-[600px] desktop_table:w-[400px] xl:w-[500px] desktop:w-[700px] ">
           <img className="w-full  rounded-2xl" src={Img} />
         </div>
-        <div className="text-center md:text-left w-[350px]  md:w-[580px] desktop_table:w-[450px] xl:w-[550px] desktop:w-[750px] pl-6 xl:pl-8 desktop:pl-12  ">
+        <div className="text-center md:text-left w-[350px]  md:w-[580px] desktop_table:w-[450px] xl:w-[550px] desktop:w-[750px] md:pl-6 xl:pl-8 desktop:pl-12  ">
           <h1 className="text-xl md:text-4xl desktop_table:text-2xl xl:text-3xl desktop:text-5xl font-semibold">
             {Title}
           </h1>
