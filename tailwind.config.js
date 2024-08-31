@@ -12,6 +12,13 @@ export default {
       animation: {
         fadeInDown: "fadeInDown 1s ease-out forwards",
       },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
     screens: {
       sm: "640px",
@@ -21,7 +28,7 @@ export default {
       xl: "1280px",
       desktop: "1460px",
       dev_desktop: "1600px",
-    },  
+    },
   },
   plugins: [],
 };

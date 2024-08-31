@@ -32,7 +32,12 @@ export default function Home() {
       <Header />
       <HeroSection Klar={Klar} KlarWhite={KlarWhite} />
       <div className="px-20 flex flex-col gap-y-20">
-        <AboutSection />
+        <AboutSection
+          title={" Evinizin Konforunu Yeniden Tasarlıyoruz"}
+          paragraph={
+            " Klar Koltuk olarak, Koltuk Yenileme ve Döşeme, İskelet Yenileme, KoltukTamiri, Mobilya Boyama ve Kişiye Özel Tasarım hizmetlerimizle eski mobilyalarınızı hayalinizdeki tasarıma kavuşturuyor, evinizin tarzına en uygun çözümleri sunuyoruz. Hemen web sitemizi keşfedin, kaliteyi yakından deneyimleyin"
+          }
+        />
         <SectionHeader bg={true} text="HİZMETLERİMİZ" />
         <FeatureSections
           Img={Sofa}
@@ -40,17 +45,15 @@ export default function Home() {
             " Koltuklarınızı Modernleştirirken, Anılarınızı Özenle Koruyoruz."
           }
           Paragraph={
-            " We believe that the future of urban living is in creating a sense of community and a sense of home. We are committed to creating spaces that are not only beautiful, but also functional and sustainable."
+            " Yıpranmış ve eski koltuklarınızı alıp adeta yenilenmiş bir şekilde geri getiriyoruz. Bu sayede mobilyalarınızın ömrünü uzatırken, yeni alım masraflarından da kaçınmanızı sağlıyoruz. Uzman ekibimiz, ihtiyaçlarınıza en uygun çözümleri sunarak hem konforunuzu hem de bütçenizi korur."
           }
           Button={"İletişime Geçin"}
         />
         <FeatureSections
           Img={Repair}
-          Title={
-            " Koltuklarınızı Modernleştirirken, Anılarınızı Özenle Koruyoruz."
-          }
+          Title={" Eskimiş Koltuklarınızı Yenileyin, Yeni Alımlardan Kaçının!"}
           Paragraph={
-            " We believe that the future of urban living is in creating a sense of community and a sense of home. We are committed to creating spaces that are not only beautiful, but also functional and sustainable."
+            " Yıpranmış ve hasarlı mobilyalarınızı atmak yerine, sadece döşemelerini değiştirerek uzun yıllar kullanabilirsiniz. Usta ekibimiz, eski koltuklarınıza modern bir dokunuş kazandırarak yüksek maliyetlerden kurtulmanızı sağlar. Böylece sağlam iskeletlerinizi koruyarak,bütçenizden tasarruf edebilirsiniz."
           }
           Button={"İletişime Geçin"}
           Reverse={true}
@@ -81,23 +84,28 @@ export default function Home() {
         button={"Şimdi Teklif Alın"}
       />
       <div className=" px-20 mt-10  flex flex-col gap-y-20">
-        <AboutSection />
+        <AboutSection
+          title={"Hayalinizdeki Tasarımı Gerçeğe Dönüştürüyoruz!"}
+          paragraph={
+            "İstediğiniz tasarımı hayata geçirmek, evinize ya da ofisinize en uygun koltukları tasarlamak için buradayız. Size özel, tamamen ihtiyaçlarınıza ve zevkinize göre tasarlanan koltuklarımızla salonlarınızda benzersiz bir şıklık ve konfor sunuyoruz. "
+          }
+        />
         <ParallaxBanner title={"KLARKOLTUK"} title2={"KLARKOLTUK"} />
         <FeatureSections
           Img={Tasarim}
           Title={"Siz İsteyin Biz Gerçekleştirelim"}
           Paragraph={
-            " We believe that the future of urban living is in creating a sense of community and a sense of home. We are committed to creating spaces that are not only beautiful, but also functional and sustainable."
+            " Sizin hayal gücünüz, bizim ustalığımızla buluşuyor. İster tamamen yeni bir tasarım, ister mevcut bir koltuğunuzun dönüşümü olsun, dilediğiniz her şeyi gerçeğe dönüştürüyoruz. Tarzınıza ve ihtiyaçlarınıza uygun, kişiye özel koltuk tasarımlarıyla yaşam alanlarınızı yeniliyoruz. Sadece hayal edin, gerisini bize bırakın!"
           }
           Button={"İletişime Geçin"}
         />
         <FeatureSections
           Img={Tasarim2}
           Title={
-            " Koltuklarınızı Modernleştirirken, Anılarınızı Özenle Koruyoruz."
+            " Evinize Uyum Sağlayan Koltuklar, Kendi Tasarımınızla"
           }
           Paragraph={
-            " We believe that the future of urban living is in creating a sense of community and a sense of home. We are committed to creating spaces that are not only beautiful, but also functional and sustainable."
+            " Evinizin atmosferine tam uyum sağlayacak koltuğu bulmak zor olabilir. Ancak, biz sizin için bu süreci kolaylaştırıyoruz. Standart kalıpların ötesine geçerek, yaşam alanınıza ve zevkinize en uygun koltuğu tasarlıyoruz. Artık hazır mobilya seçenekleriyle yetinmek zorunda değilsiniz. Daha fazlası için şimdi iletişime geçin!"
           }
           Button={"İletişime Geçin"}
           Reverse={true}

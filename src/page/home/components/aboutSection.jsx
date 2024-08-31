@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function AboutSection() {
+export default function AboutSection({title, paragraph}) {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0">
       <div className="text-center md:text-left">
@@ -9,14 +9,11 @@ export default function AboutSection() {
           <div className="bg-[#9e9ea0] px-10 h-1"></div>
         </div>
         <h1 className="text-4xl md:text-6xl font-semibold w-full md:w-[320px]">
-          For Urban Living.
+         {title}
         </h1>
       </div>
       <p className="text-lg md:text-2xl w-full md:w-[1000px] text-center md:text-left">
-        We believe that the future of urban living is in creating a sense of
-        community and a sense of home. We are committed to creating spaces that
-        are not only beautiful, but also functional and sustainable. Our goal is
-        to create spaces that are designed to be lived in, not just looked at.
+       {paragraph}
       </p>
     </div>
   );
