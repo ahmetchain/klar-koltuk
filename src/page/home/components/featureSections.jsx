@@ -5,7 +5,7 @@ export default function FeatureSections({Title, Paragraph, Button, Img, Reverse,
     <>
     <div className={`flex flex-col h-full gap-y-10 lg:flex-row items-center justify-between ${Reverse ? "lg:flex-row-reverse" : "flex-row"} ${bg ? "lg:bg-black/5" : ""} mt-10 rounded-2xl`}>
     <div className=" w-[350px]  md:w-[600px] desktop_table:w-[400px] xl:w-[500px] desktop:w-[700px] ">
-          <img className="w-full  rounded-2xl" src={Img} />
+          <img loading="lazy" className="w-full  rounded-2xl" src={Img} />
         </div>
         <div className="text-center md:text-left w-[350px]  md:w-[580px] desktop_table:w-[450px] xl:w-[550px] desktop:w-[750px] md:pl-6 xl:pl-8 desktop:pl-12  ">
           <h1 className="text-xl md:text-4xl desktop_table:text-2xl xl:text-3xl desktop:text-5xl font-semibold">

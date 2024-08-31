@@ -6,11 +6,15 @@ export default function HeroSection({ Klar, KlarWhite }) {
       <main className="relative w-full h-[calc(100%-100px)] rounded-lg mb-20">
         <div className="absolute w-[calc(100%-10px)] mx-auto inset-0 bg-gradient-to-b from-black/35 to-transparent rounded-lg"></div>
         <img
+          loading="lazy"
           src={Klar}
           className="w-[calc(100%-10px)] h-full mx-auto rounded-xl md:object-cover md:object-center  object-right object-cover"
         />
         <div className=" absolute top-[130px] md:top-[120px] left-1/2 -translate-x-1/2">
-          <img className="w-[150px] sm:w-[180px] md:w-[250px] desktop:w-[300px]"  src={KlarWhite} />
+          <img
+            className="w-[150px] sm:w-[180px] md:w-[250px] desktop:w-[300px]"
+            src={KlarWhite}
+          />
         </div>
         <div className=" absolute -translate-y-1/2 top-[38%] md:top-[40%] -translate-x-1/2 left-1/2 md:w-[750px] ">
           <h1 className=" text-[23px] sm:text-3xl md:text-5xl text-white  text-center mt-6 mb-6 sm:mt-8 sm:mb-8 md:mt-10 md:mb-10 font-thin ">

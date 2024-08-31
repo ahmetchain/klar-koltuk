@@ -101,9 +101,7 @@ export default function Home() {
         />
         <FeatureSections
           Img={Tasarim2}
-          Title={
-            " Evinize Uyum Sağlayan Koltuklar, Kendi Tasarımınızla"
-          }
+          Title={" Evinize Uyum Sağlayan Koltuklar, Kendi Tasarımınızla"}
           Paragraph={
             " Evinizin atmosferine tam uyum sağlayacak koltuğu bulmak zor olabilir. Ancak, biz sizin için bu süreci kolaylaştırıyoruz. Standart kalıpların ötesine geçerek, yaşam alanınıza ve zevkinize en uygun koltuğu tasarlıyoruz. Artık hazır mobilya seçenekleriyle yetinmek zorunda değilsiniz. Daha fazlası için şimdi iletişime geçin!"
           }
@@ -114,6 +112,7 @@ export default function Home() {
       </div>
       <footer className="relative mt-20 h-[800px]  ">
         <video
+          loading="lazy"
           className="absolute top-0 left-0 w-full h-full object-cover rounded-t-xl"
           src={FooterVideo}
           autoPlay
