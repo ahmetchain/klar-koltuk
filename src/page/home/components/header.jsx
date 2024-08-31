@@ -14,15 +14,17 @@ export default function Header() {
         </div>
         <div>
           <ul className="flex gap-x-5">
-            <li className=" text-[11px] md:text-sm lg:text-base font-semibold text-black">
+            <li className=" cursor-pointer text-[11px] md:text-sm lg:text-base font-semibold text-black">
               ANASAYFA
             </li>
-            <li className=" text-[11px] md:text-sm lg:text-base font-semibold text-black opacity-80">
+            <li className=" cursor-pointer text-[11px] md:text-sm lg:text-base font-semibold text-black opacity-80">
               HİZMETLERİMİZ
             </li>
-            <li className="  text-[11px] md:text-sm lg:text-base font-semibold text-black opacity-80">
-              İLETİŞİM
-            </li>
+            <a href="https://wa.me/905333709349" target="_blank">
+              <li className=" cursor-pointer  text-[11px] md:text-sm lg:text-base font-semibold text-black opacity-80">
+                İLETİŞİM
+              </li>
+            </a>
           </ul>
         </div>
       </div>

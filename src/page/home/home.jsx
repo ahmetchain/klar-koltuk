@@ -5,17 +5,13 @@ import Klar from "../../png/klarwalpaper.jpeg";
 import Repair from "../../png/koltukyeni.png";
 import Sofa from "../../png/repair.jpg";
 import AboutSection from "./components/aboutSection";
-import Services from "./components/services";
 import Before_1 from "../../png/1.jpg";
 import After_2 from "../../png/2.jpg";
 import Before_3 from "../../png/3.jpg";
 import After_4 from "../../png/4.jpg";
-import Before_5 from "../../png/5.jpg";
-import After_6 from "../../png/6.jpg";
 import ForYou from "../../png/foryou.jpeg";
 import Tasarim from "../../png/tasarım.jpeg";
 import Tasarim2 from "../../png/tasarım2.jpeg";
-import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import FooterVideo from "../../video/footerstock.mp4";
 import { FaInstagram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
@@ -124,19 +120,34 @@ export default function Home() {
           <h1 className="text-xl w-[300px] sm:w-auto text-center sm:text-2xl lg:text-4xl font-semibold">
             Hayalinizdeki Tasarım Parmaklarınızın Ucunda
           </h1>
-          <a className="p-2 cursor-pointer sm:p-3 lg:p-5 border-2 border-white sm:text-lg font-semibold hover:bg-white hover:text-black duration-300 ">
+          <a
+            href="https://wa.me/905333709349"
+            target="_blank"
+            className="p-2 select-none cursor-pointer sm:p-3 lg:p-5 border-2 border-white sm:text-lg font-semibold hover:bg-white hover:text-black duration-300 "
+          >
             Şimdi teklif alın
           </a>
         </div>
         <div className=" absolute h-[80px] bg-black w-full bottom-0 flex justify-center ">
-          <div className="flex items-center sm:text-base text-xs gap-x-4 sm:gap-x-10 text-white">
+          <div className="flex items-center z-50 sm:text-base text-xs gap-x-4 sm:gap-x-10 text-white">
             <a href="#">Klar-Koltuk</a>
             <a href="#">Hizmetler</a>
-            <a href="#">Konum</a>
-            <a href="#">İletişim</a>
-            <a className="flex items-center gap-x-3 sm:gap-x-5">
-              <FaInstagram className="h-5" />
-              <FaWhatsapp className="h-5" />
+            <a
+              href="https://www.google.com/maps/place/Klar+Koltuk/@38.3706212,27.1380217,17z/data=!3m1!4b1!4m6!3m5!1s0x14bbdf06ea95e47d:0x800635dd2fbefea5!8m2!3d38.370617!4d27.1405966!16s%2Fg%2F11lf93vdw3?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+            >
+              Konum
+            </a>
+            <a href="https://wa.me/905333709349" target="_blank">
+              İletişim
+            </a>
+            <a className="flex items-center cursor-pointer select-none gap-x-3 sm:gap-x-5">
+              <a href="https://www.instagram.com/klarkoltuk/" target="_blank">
+                <FaInstagram className="h-5" />
+              </a>
+              <a href="https://wa.me/905333709349" target="_blank">
+                <FaWhatsapp className="h-5" />
+              </a>
             </a>
           </div>
         </div>
