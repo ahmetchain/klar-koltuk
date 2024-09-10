@@ -19,7 +19,7 @@ export default function Header() {
               ANASAYFA
             </li>
             <a href="https://www.instagram.com/klarkoltuk/" target="_blank">
-              <li className=" flex  cursor-pointer text-[11px] md:text-sm lg:text-base font-semibold text-black opacity-80">
+              <li className=" flex items-center cursor-pointer text-[11px] md:text-sm lg:text-base font-semibold text-black opacity-80">
                 INSTAGRAM <FaInstagram className="h-5 ml-1" />
               </li>
             </a>

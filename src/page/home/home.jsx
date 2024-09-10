@@ -71,14 +71,14 @@ export default function Home() {
       <BeforeAfterComparison
         before={Before_1}
         after={After_2}
-        textb={"Öncesi "}
-        texta={"Sonrası"}
+        textb={"Sonrası "}
+        texta={"Öncesi"}
       />
       <BeforeAfterComparison
         before={Before_3}
         after={After_4}
-        textb={"Öncesi"}
-        texta={"Sonrası"}
+        textb={"Sonrası "}
+        texta={"Öncesi"}
       />
       <BannerSection
         img={ForYou}
