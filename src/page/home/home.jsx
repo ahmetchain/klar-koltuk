@@ -141,7 +141,9 @@ export default function Home() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/klarkoltuk/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:text-gray-300 transition duration-300"
                   >
                     Hakkımızda
@@ -157,7 +159,9 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/klarkoltuk/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:text-gray-300 transition duration-300"
                   >
                     Galeri
@@ -165,7 +169,9 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://wa.me/905333709349"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:text-gray-300 transition duration-300"
                   >
                     İletişim
@@ -180,7 +186,7 @@ export default function Home() {
                 <li className="flex items-center space-x-2">
                   <FaPhone className="text-gray-400" />
                   <a
-                  href="https://wa.me/905333709349"
+                    href="https://wa.me/905333709349"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-gray-300 transition duration-300"
@@ -199,7 +205,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center space-x-2">
                   <FaMapMarkerAlt className="text-gray-400" />
-                  <p>1234 Sokak, No: 56, Konak/İzmir</p>
+                  <p>Seyhan, 643. Sk. no:27/2, 35380 Buca/İzmir</p>
                 </li>
               </ul>
             </div>
@@ -222,6 +228,14 @@ export default function Home() {
                   className="text-2xl hover:text-green-500 transition duration-300"
                 >
                   <FaWhatsapp />
+                </a>
+                <a
+                  href="https://www.google.com/maps/place/Klar+Koltuk/@38.3706212,27.1380217,17z/data=!3m1!4b1!4m6!3m5!1s0x14bbdf06ea95e47d:0x800635dd2fbefea5!8m2!3d38.370617!4d27.1405966!16s%2Fg%2F11lf93vdw3?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-2xl hover:text-blue-500 transition duration-300"
+                >
+                  <FaMapMarkerAlt />
                 </a>
               </div>
               <a
