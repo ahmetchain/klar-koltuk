@@ -14,7 +14,7 @@ export default function Header() {
           <img className="w-[35px] md:w-[50px] lg:w-[80px]" src={Logo} />
         </div>
         <div>
-          <ul className="flex gap-x-5">
+          <ul className="flex items-center gap-x-5">
             <li className=" cursor-pointer text-[11px] md:text-sm lg:text-base font-semibold text-black">
               ANASAYFA
             </li>
