@@ -8,9 +8,15 @@ export default {
           "0%": { opacity: "0", transform: "translateY(-100px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
+
       animation: {
         fadeInDown: "fadeInDown 1s ease-out forwards",
+        scroll: "scroll 3s linear infinite",
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],

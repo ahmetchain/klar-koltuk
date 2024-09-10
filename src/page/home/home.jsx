@@ -24,23 +24,31 @@ import FeatureSections from "./components/featureSections";
 import BeforeAfterComparison from "./components/beforeAfterComparison";
 import BannerSection from "./components/bannerSection";
 import ParallaxBanner from "./components/parallaxBanner";
-
+import Koltuk1 from "../../png/newpicture1.jpg";
+import Koltuk2 from "../../png/newpicture2.jpg";
+import Koltuk3 from "../../png/newpicture3.jpg";
+import Koltuk4 from "../../png/newpicture4.jpg";
+import InfiniteSlider from "./components/InfiniteSlider";
 export default function Home() {
   const servicesRef = useRef(null);
   const scrollToRef = () => {
     servicesRef.current.scrollIntoView({ behavior: "smooth" });
   };
+  const koltukImages = [Koltuk1, Koltuk2, Koltuk3, Koltuk4];
+
   return (
     <div className="h-screen">
       <Header />
       <HeroSection Klar={Klar} KlarWhite={KlarWhite} scroll={scrollToRef} />
-      <div className="px-20 flex flex-col gap-y-20">
+
+      <div className="px-20 flex flex-col gap-y-20 mb-20">
         <AboutSection
           title={" Evinizin Konforunu Yeniden Tasarlıyoruz"}
           paragraph={
             " Klar Koltuk olarak, Koltuk Yenileme ve Döşeme, İskelet Yenileme, KoltukTamiri, Mobilya Boyama ve Kişiye Özel Tasarım hizmetlerimizle eski mobilyalarınızı hayalinizdeki tasarıma kavuşturuyor, evinizin tarzına en uygun çözümleri sunuyoruz. Hemen web sitemizi keşfedin, kaliteyi yakından deneyimleyin"
           }
         />
+        
         <div ref={servicesRef}>
           <SectionHeader bg={true} text="HİZMETLERİMİZ" />
         </div>
@@ -64,6 +72,10 @@ export default function Home() {
           Reverse={true}
           bg={true}
         />
+      </div>
+      <div className="px-10 mt-10 lg:mt-0 mb-10 lg:mb-0">
+      <InfiniteSlider images={koltukImages} />
+
       </div>
       <div className="px-20 mt-10 lg:mt-0 mb-10 lg:mb-0">
         <SectionHeader text="BEFORE AFTER" />
