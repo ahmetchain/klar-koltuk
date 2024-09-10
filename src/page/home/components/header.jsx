@@ -1,6 +1,7 @@
 import React from "react";
 import Klar from "../../../png/klar.jpg";
 import Logo from "../../../png/logo.png";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
 export default function Header() {
   return (
     <>
@@ -17,12 +18,14 @@ export default function Header() {
             <li className=" cursor-pointer text-[11px] md:text-sm lg:text-base font-semibold text-black">
               ANASAYFA
             </li>
-            <li className=" cursor-pointer text-[11px] md:text-sm lg:text-base font-semibold text-black opacity-80">
-              HİZMETLERİMİZ
-            </li>
+            <a href="https://www.instagram.com/klarkoltuk/" target="_blank">
+              <li className=" flex  cursor-pointer text-[11px] md:text-sm lg:text-base font-semibold text-black opacity-80">
+                INSTAGRAM <FaInstagram className="h-5 ml-1" />
+              </li>
+            </a>
             <a href="https://wa.me/905333709349" target="_blank">
-              <li className=" cursor-pointer  text-[11px] md:text-sm lg:text-base font-semibold text-black opacity-80">
-                İLETİŞİM
+              <li className=" flex items-center cursor-pointer  text-[11px] md:text-sm lg:text-base font-semibold text-black opacity-80">
+                İLETİŞİM <FaWhatsapp className="h-5 ml-1 " />
               </li>
             </a>
           </ul>

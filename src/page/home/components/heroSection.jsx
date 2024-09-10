@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function HeroSection({ Klar, KlarWhite }) {
+export default function HeroSection({ Klar, KlarWhite, scroll }) {
   return (
     <>
       <main className="relative w-full h-[calc(100%-100px)] rounded-lg mb-20">
@@ -23,13 +23,15 @@ export default function HeroSection({ Klar, KlarWhite }) {
           <nav className="flex items-center justify-center gap-x-8 md:gap-x-20  md:mt-5 ">
             <a
               className=" rounded-full  text-nowrap font-semibold px-3 text-xs py-2.5 sm:px-6 sm:py-4 md:px-8 md:py-5 bg-black/10 md:font-normal tracking-tight hover:bg-black/20 text-white  md:text-xl"
-              href="#"
+              href="https://wa.me/905333709349"
+              target="_blank"
             >
               Şimdi İletişime Geçin
             </a>
             <a
-              className=" rounded-full sm:px-6 font-semibold sm:py-4 text-xs md:px-8 px-3 py-2.5 md:py-5 text-nowrap bg-black/10 md:font-normal tracking-tight hover:bg-black/20 text-white md:text-xl"
-              href="#"
+              className=" cursor-pointer rounded-full sm:px-6 font-semibold sm:py-4 text-xs md:px-8 px-3 py-2.5 md:py-5 text-nowrap bg-black/10 md:font-normal tracking-tight hover:bg-black/20 text-white md:text-xl"
+              onClick={scroll}
+            
             >
               Hizmetlerimize Göz at
             </a>

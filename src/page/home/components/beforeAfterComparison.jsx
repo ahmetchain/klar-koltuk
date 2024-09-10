@@ -1,34 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function BeforeAfterComparison({ textb, texta, before, after }) {
+  const [sliderPosition, setSliderPosition] = useState(50);
+
+  const handleSliderChange = (e) => {
+    setSliderPosition(e.target.value);
+  };
+
   return (
-    <>
-      <div className="flex flex-col gap-y-10 lg:flex-row items-center justify-around px-20 mb-20">
-        <div className="w-[350px] sm:w-[450px] md:w-[700px] lg:w-[400px] xl:w-[500px] dev_desktop:w-[650px]">
-          <div className="relative">
-            <img
-              className="rounded-xl w-full hover:scale-105 transition-transform duration-300"
-              src={before}
-              alt="Before Image"
-            />
-            {/* <p className="absolute bottom-0 left-0 right-0 text-center text-white/90 bg-black/70 py-2 rounded-b-xl text-sm md:text-base font-medium">
-              {textb}
-            </p> */}
-          </div>
+    <div className="max-w-4xl mx-auto px-4 mb-20">
+      <div className="relative h-[400px] md:h-[500px] overflow-hidden rounded-xl">
+        <img
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          src={before}
+          alt="Before Image"
+        />
+        <div
+          className="absolute top-0 left-0 w-full h-full overflow-hidden"
+          style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
+        >
+          <img
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            src={after}
+            alt="After Image"
+          />
         </div>
-        <div className="w-[350px] sm:w-[450px] md:w-[700px] lg:w-[400px] xl:w-[500px] dev_desktop:w-[650px]">
-          <div className="relative">
-            <img
-              className="rounded-xl w-full hover:scale-105 transition-transform duration-300"
-              src={after}
-              alt="After Image"
-            />
-            {/* <p className="absolute bottom-0 left-0 right-0 text-center text-white/90 bg-black/70 py-2 rounded-b-xl text-sm md:text-base font-medium">
-              {texta}
-            </p> */}
-          </div>
+        <div
+          className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize"
+          style={{ left: `${sliderPosition}%` }}
+        />
+        <div className="absolute bottom-4 left-0 right-0 flex justify-center">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value={sliderPosition}
+            onChange={handleSliderChange}
+            className="w-3/4 accent-white"
+          />
         </div>
       </div>
-    </>
+      <div className="mt-4 flex justify-between text-sm md:text-base">
+        <p className="font-semibold text-gray-700">{textb}</p>
+        <p className="font-semibold text-gray-700">{texta}</p>
+      </div>
+    </div>
   );
 }

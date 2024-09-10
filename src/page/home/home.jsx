@@ -1,4 +1,4 @@
-import React from "react";
+import { useRef } from "react";
 import Header from "./components/header";
 import KlarWhite from "../../png/klar-logo-beyaz.png";
 import Klar from "../../png/klarwalpaper.jpeg";
@@ -23,10 +23,14 @@ import BannerSection from "./components/bannerSection";
 import ParallaxBanner from "./components/parallaxBanner";
 
 export default function Home() {
+  const servicesRef = useRef(null);
+  const scrollToRef = () => {
+    servicesRef.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="h-screen">
       <Header />
-      <HeroSection Klar={Klar} KlarWhite={KlarWhite} />
+      <HeroSection Klar={Klar} KlarWhite={KlarWhite} scroll={scrollToRef} />
       <div className="px-20 flex flex-col gap-y-20">
         <AboutSection
           title={" Evinizin Konforunu Yeniden Tasarlıyoruz"}
@@ -34,7 +38,9 @@ export default function Home() {
             " Klar Koltuk olarak, Koltuk Yenileme ve Döşeme, İskelet Yenileme, KoltukTamiri, Mobilya Boyama ve Kişiye Özel Tasarım hizmetlerimizle eski mobilyalarınızı hayalinizdeki tasarıma kavuşturuyor, evinizin tarzına en uygun çözümleri sunuyoruz. Hemen web sitemizi keşfedin, kaliteyi yakından deneyimleyin"
           }
         />
-        <SectionHeader bg={true} text="HİZMETLERİMİZ" />
+        <div ref={servicesRef}>
+          <SectionHeader bg={true} text="HİZMETLERİMİZ" />
+        </div>
         <FeatureSections
           Img={Sofa}
           Title={
@@ -62,20 +68,20 @@ export default function Home() {
       <BeforeAfterComparison
         before={Before_1}
         after={After_2}
-        textb={"Solmuş ve Kirli Halde"}
-        texta={"Yenilenmiş ve sıfır tarzında"}
+        textb={"Öncesi "}
+        texta={"Sonrası"}
       />
       <BeforeAfterComparison
         before={Before_3}
         after={After_4}
-        textb={"Solmuş ve Kirli Halde"}
-        texta={"Yenilenmiş ve sıfır tarzında"}
+        textb={"Öncesi"}
+        texta={"Sonrası"}
       />
       <BannerSection
         img={ForYou}
         title={"SİZİN İÇİN ÖZENLE TASARLANDI"}
         p={"Hayalinizdeki tasarımları gerçeğe dönüştürüyoruz."}
-        p1={"Haylleriniz kavuşmak sadece bir adım uzağınızda"}
+        p1={"Hayallerinize kavuşmak sadece bir adım uzağınızda"}
         p2={"Şimdi bizimle iletişime geçin ve hayalinize kavuşun"}
         button={"Şimdi Teklif Alın"}
       />
