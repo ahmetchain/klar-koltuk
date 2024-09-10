@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import Header from "./components/header";
 import KlarWhite from "../../png/klar-logo-beyaz.png";
-import Klar from "../../png/klarwalpaper.jpeg";
+import Klar from "../../png/klarwalpaper.webp";
 import Repair from "../../png/koltukyeni.png";
 import Sofa from "../../png/repair.jpg";
 import AboutSection from "./components/aboutSection";
