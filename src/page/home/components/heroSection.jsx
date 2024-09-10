@@ -31,7 +31,6 @@ export default function HeroSection({ Klar, KlarWhite, scroll }) {
             <a
               className=" cursor-pointer rounded-full sm:px-6 font-semibold sm:py-4 text-xs md:px-8 px-3 py-2.5 md:py-5 text-nowrap bg-black/10 md:font-normal tracking-tight hover:bg-black/20 text-white md:text-xl"
               onClick={scroll}
-            
             >
               Hizmetlerimize Göz at
             </a>

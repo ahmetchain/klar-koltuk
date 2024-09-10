@@ -9,12 +9,15 @@ import Before_1 from "../../png/resim1.jpg";
 import After_2 from "../../png/resim2.jpg";
 import Before_3 from "../../png/resim3.jpg";
 import After_4 from "../../png/resim4.jpg";
-import ForYou from "../../png/foryou.jpeg";
-import Tasarim from "../../png/tasarım.jpeg";
-import Tasarim2 from "../../png/tasarım2.jpeg";
+import ForYou from "../../png/foryou.webp";
+import Tasarim from "../../png/tasarım.webp";
+import Tasarim2 from "../../png/tasarım2.webp";
 import FooterVideo from "../../video/footerstock.mp4";
 import { FaInstagram } from "react-icons/fa6";
+import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 import HeroSection from "./components/heroSection";
 import SectionHeader from "./components/sectionHeader";
 import FeatureSections from "./components/featureSections";
@@ -112,49 +115,131 @@ export default function Home() {
           bg={true}
         />
       </div>
-      <footer className="relative mt-20 h-[800px]  ">
+      <footer className=" min-h-[450px] relative mt-20 bg-gray-900 text-white overflow-hidden">
         <video
-          loading="lazy"
-          className="absolute top-0 left-0 w-full h-full object-cover rounded-t-xl"
+          className="absolute top-0 left-0 w-full h-full object-cover "
           src={FooterVideo}
           autoPlay
           loop
           muted
+          playsInline
         />
-        <div className="absolute  mx-auto inset-0 bg-gradient-to-t from-black/35 to-transparent rounded-lg"></div>
-        <div className=" absolute z-20 flex flex-col text-white items-center justify-center w-full h-full gap-y-16 lg:gap-y-20">
-          <h1 className="text-xl w-[300px] sm:w-auto text-center sm:text-2xl lg:text-4xl font-semibold">
-            Hayalinizdeki Tasarım Parmaklarınızın Ucunda
-          </h1>
-          <a
-            href="https://wa.me/905333709349"
-            target="_blank"
-            className="p-2 select-none cursor-pointer sm:p-3 lg:p-5 border-2 border-white sm:text-lg font-semibold hover:bg-white hover:text-black duration-300 "
-          >
-            Şimdi teklif alın
-          </a>
-        </div>
-        <div className=" absolute h-[80px] bg-black w-full bottom-0 flex justify-center ">
-          <div className="flex items-center z-50 sm:text-base text-xs gap-x-4 sm:gap-x-10 text-white">
-            <a href="#">Klar-Koltuk</a>
-            <a href="#">Hizmetler</a>
-            <a
-              href="https://www.google.com/maps/place/Klar+Koltuk/@38.3706212,27.1380217,17z/data=!3m1!4b1!4m6!3m5!1s0x14bbdf06ea95e47d:0x800635dd2fbefea5!8m2!3d38.370617!4d27.1405966!16s%2Fg%2F11lf93vdw3?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D"
-              target="_blank"
-            >
-              Konum
-            </a>
-            <a href="https://wa.me/905333709349" target="_blank">
-              İletişim
-            </a>
-            <a className="flex items-center cursor-pointer select-none gap-x-3 sm:gap-x-5">
-              <a href="https://www.instagram.com/klarkoltuk/" target="_blank">
-                <FaInstagram className="h-5" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-900/70 to-gray-900"></div>
+
+        <div className="relative z-10 container mx-auto px-4 py-28">
+          <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="space-y-4">
+              <h2 className="text-3xl font-bold">Klar Koltuk</h2>
+              <p className="text-sm text-gray-300">
+                Evinizin konforunu yeniden tasarlıyoruz. Kalite ve şıklık bizim
+                işimiz.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold">Hızlı Bağlantılar</h3>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-gray-300 transition duration-300"
+                  >
+                    Hakkımızda
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-gray-300 transition duration-300"
+                  >
+                    Hizmetler
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-gray-300 transition duration-300"
+                  >
+                    Galeri
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-gray-300 transition duration-300"
+                  >
+                    İletişim
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold">İletişim</h3>
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-center space-x-2">
+                  <FaPhone className="text-gray-400" />
+                  <a
+                  href="https://wa.me/905333709349"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-gray-300 transition duration-300"
+                  >
+                    +90 533 370 93 49
+                  </a>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <FaEnvelope className="text-gray-400" />
+                  <a
+                    href="mailto:info@klarkoltuk.com"
+                    className="hover:text-gray-300 transition duration-300"
+                  >
+                    info@klarkoltuk.com
+                  </a>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <FaMapMarkerAlt className="text-gray-400" />
+                  <p>1234 Sokak, No: 56, Konak/İzmir</p>
+                </li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold">Bizi Takip Edin</h3>
+              <div className="flex space-x-4">
+                <a
+                  href="https://www.instagram.com/klarkoltuk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-2xl hover:text-pink-500 transition duration-300"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://wa.me/905333709349"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-2xl hover:text-green-500 transition duration-300"
+                >
+                  <FaWhatsapp />
+                </a>
+              </div>
+              <a
+                href="https://wa.me/905333709349"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-2 bg-white text-gray-900 font-bold rounded-full hover:bg-gray-200 transition duration-300 text-sm"
+              >
+                Şimdi Teklif Alın
               </a>
-              <a href="https://wa.me/905333709349" target="_blank">
-                <FaWhatsapp className="h-5" />
-              </a>
-            </a>
+            </div>
+          </div>
+
+          <div className="mt-8 pt-4 border-t border-gray-800 text-center text-sm">
+            <p className="text-gray-400">
+              &copy; {new Date().getFullYear()} Klar Koltuk. Tüm hakları
+              saklıdır.
+            </p>
           </div>
         </div>
       </footer>
